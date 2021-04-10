@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CRM Automation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
+    <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="CRM(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="updateClick"/>
+          <include name="CheckUsername"/>
+          <include name="ContactBtn"/>
+          <include name="SearchText"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.DetailsPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.DetailsPageTest -->
+    </classes>
+  </test> <!-- CRM(failed) -->
+</suite> <!-- Failed suite [CRM Automation] -->
