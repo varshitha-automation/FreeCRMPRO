@@ -17,7 +17,7 @@ public class DetailsPage extends TestBase{
 		
 	}
 
-	@FindBy(name="email")
+	@FindBy(name="emailhg")
 	WebElement name;
 	
 	@FindBy(name="password")
